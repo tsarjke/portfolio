@@ -1,0 +1,19 @@
+#root {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  overflow: hidden;
+
+  & > section {
+    flex: 1 0;
+  }
+}
+
+.title {
+	font-size: 2.5rem;
+}
