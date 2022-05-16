@@ -1,0 +1,56 @@
+@keyframes smooth {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.menu {
+  &__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: smooth 0.5s ease;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__elem {
+    margin: 0 0 50px 0;
+  }
+
+  &__link {
+    padding: 5px;
+    font-size: 1.75rem;
+    color: #fff;
+    position: relative;
+
+    &:after {
+			content: '';
+      background-color: #fff;
+      display: block;
+      position: absolute;
+			bottom: 0;
+			left: 0;
+      height: 2px;
+      width: 0%;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
+    }
+  }
+}
