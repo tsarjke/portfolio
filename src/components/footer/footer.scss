@@ -1,6 +1,6 @@
 .footer {
   &__row {
-		padding: 15px 0;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,16 +8,24 @@
   &__text {
     text-align: center;
     font-size: 1.25rem;
-		margin: 0 0 10px 0;
+    margin: 0 0 10px 0;
   }
   &__btn {
-		font-size: 1.1rem;
+    font-size: 1.1rem;
     background: #000;
     color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
-		margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
   }
   &__social {
+    display: flex;
+		width: 100%;
+		justify-content: space-around;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
