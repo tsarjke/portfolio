@@ -6,11 +6,9 @@ const About = () => (
     <div className="about__row">
       <h2 className="about__title title">About me</h2>
       <div className="about__text">
-        <p>Hi, I&#39;m Denis – UX/UI designer from Minsk.</p>
+        <p>Hi, I&#39;m Ivan – Frontend developer from Saint-Petersburg.</p>
         <p>
-          I&#39;m interested in design and everything connected with it. I&#39;m
-          studying at courses &#34;Web and mobile design interfaces&#34; in
-          IT-Academy.
+          I&#39;m interested in web and everything connected with it.
         </p>
         <p>Ready to implement excellent projects with wonderful people.</p>
       </div>
