@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import Menu from '../menu/Menu';
 import './Header.scss';
 
-const Header = () => {
-  const [menuVisibility, setMenuVisibility] = useState(false);
+const Header = ({ data }) => {
+  const [menuVisibility, setMenuVisibility] = useState(
+    window.innerWidth >= 768,
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,13 +20,15 @@ const Header = () => {
   });
 
   const onLinkClick = () => {
-    setMenuVisibility(false);
+    if (window.innerWidth < 768) {
+      setMenuVisibility(false);
+    }
   };
 
   return (
     <header className="header">
       <div className="header__row">
-        {menuVisibility ? <Menu onLinkClick={onLinkClick} /> : ''}
+        {menuVisibility ? <Menu onLinkClick={onLinkClick} data={data} /> : ''}
         <button
           type="button"
           className={`header__menu-btn ${menuVisibility ? 'active' : ''}`}
@@ -36,6 +41,10 @@ const Header = () => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  data: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default Header;

@@ -8,21 +8,26 @@ import Skills from '../skills/Skills';
 import Portfolio from '../portfolio/Portfolio';
 import Footer from '../footer/Footer';
 
+import data from '../../data.json';
+
 import './null.scss';
 
-const App = () => (
-  <Router>
-    <div className="container">
-      <Header />
-      <Routes>
-        <Route path="/*" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-      <Footer />
-    </div>
-  </Router>
-);
+const App = () => {
+  console.log(data.en);
+  return (
+    <Router>
+      <div className="container">
+        <Header data={data.en.header} />
+        <Routes>
+          <Route path="/*" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
 export default App;

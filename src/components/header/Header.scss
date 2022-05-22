@@ -1,6 +1,7 @@
 .header {
   &__menu-btn {
     position: absolute;
+		z-index: 101;
     top: 3%;
     right: 5%;
     display: flex;

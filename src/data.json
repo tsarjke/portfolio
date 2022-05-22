@@ -1,0 +1,29 @@
+{
+	"en": {
+		"header": {
+			"lang": ["Eng", "Ru"],
+			"menu": ["Main", "About", "Skills", "Portfolio"]
+		},
+		"main": {
+			"title": "Ivan Tsarev",
+			"label": ["Frontend develover", "23 years old, Saint-Petersburg"]
+		},
+		"about": {
+			"title": "About me",
+			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg", "I'm interested in web and everything connected with it", "Ready to implement excellent projects with wonderful people."]
+		},
+		"skills": {
+			"title": "Skills"
+		},
+		"portfolio": {
+			"title": "Portfolio",
+			"text": ["Visit the website", "Go to the code"]
+		},
+		"footer": {
+			"text": "Want to know more or just chat? You are welcome!"
+		}
+	},
+	"ru": {
+
+	}
+}

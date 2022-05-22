@@ -4,12 +4,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: 768px) {
+      padding: 20px 0;
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
+
   &__text {
     text-align: center;
     font-size: 1.25rem;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
+
+    @media (min-width: 480px) {
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 25px 0 0;
+    }
   }
+
   &__btn {
     font-size: 1.1rem;
     background: #000;
@@ -20,12 +40,42 @@
   }
   &__social {
     display: flex;
-		width: 100%;
-		justify-content: space-around;
+    width: 100%;
+    justify-content: space-around;
 
-    img {
+    @media (min-width: 1024px) {
+      width: auto;
+    }
+  }
+
+  &__icon-wrapper {
+		fill: #222;
+    svg {
       width: 35px;
       height: 35px;
+    }
+
+    &:hover {
+      fill: #000;
+    }
+
+    @media (min-width: 480px) {
+      justify-content: center;
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 80px 0 0;
+    }
+
+    @media (min-width: 1024px) {
+      &:not(:last-child) {
+        margin: 0 40px 0 0;
+      }
     }
   }
 }
