@@ -40,10 +40,11 @@
   }
 
   &__lang {
-		font-size: 1rem;
+		background-color: transparent;
+		font-size: 1.2rem;
 		font-weight: bold;
 		color: #bbb;
-		padding: 0 5px;
+		padding: 0 8px;
 		cursor: pointer;
 
 		&:hover {
@@ -55,6 +56,8 @@
     }
 
 		@media (min-width: 768px) {
+			font-size: 1rem;
+			padding: 0 5px;
 			color: #555;
 
 			&:hover {

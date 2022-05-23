@@ -38,44 +38,4 @@
     border-radius: 5px;
     margin: 0 0 20px 0;
   }
-  &__social {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-
-    @media (min-width: 1024px) {
-      width: auto;
-    }
-  }
-
-  &__icon-wrapper {
-		fill: #222;
-    svg {
-      width: 35px;
-      height: 35px;
-    }
-
-    &:hover {
-      fill: #000;
-    }
-
-    @media (min-width: 480px) {
-      justify-content: center;
-
-      svg {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    &:not(:last-child) {
-      margin: 0 80px 0 0;
-    }
-
-    @media (min-width: 1024px) {
-      &:not(:last-child) {
-        margin: 0 40px 0 0;
-      }
-    }
-  }
 }

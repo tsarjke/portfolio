@@ -1,5 +1,5 @@
 {
-	"en": {
+	"eng": {
 		"header": {
 			"lang": ["Eng", "Ru"],
 			"menu": ["Main", "About", "Skills", "Portfolio"]
@@ -10,10 +10,11 @@
 		},
 		"about": {
 			"title": "About me",
-			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg", "I'm interested in web and everything connected with it", "Ready to implement excellent projects with wonderful people."]
+			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg ", "I'm interested in web and everything connected with it", "Ready to implement excellent projects with wonderful people"]
 		},
 		"skills": {
-			"title": "Skills"
+			"title": "Skills",
+			"images": ["./img/html.svg", "./img/css.svg", "./img/sass.svg", "./img/js.svg", "./img/react.svg", "./img/git.svg", "./img/webpack.svg", "./img/ps.svg", "./img/figma.svg"]
 		},
 		"portfolio": {
 			"title": "Portfolio",
@@ -23,7 +24,30 @@
 			"text": "Want to know more or just chat? You are welcome!"
 		}
 	},
-	"ru": {
 
+	"ru": {
+		"header": {
+			"lang": ["Eng", "Ru"],
+			"menu": ["Главная", "Обо мне", "Навыки", "Портфолио"]
+		},
+		"main": {
+			"title": "Иван Царев",
+			"label": ["Фронтенд разработчик", "23 года, Санкт-Петербург"]
+		},
+		"about": {
+			"title": "Обо мне",
+			"text": ["Привет, меня зову Иван, я фронтенд разработчик из Санкт-Петербурга", "Интересуюсь вебом и всем, что с ним связано", "Готов начать работу над отличными проектами с замечательными людьми"]
+		},
+		"skills": {
+			"title": "Навыки",
+			"images": ["./img/html.svg", "./img/css.svg", "./img/sass.svg", "./img/js.svg", "./img/react.svg", "./img/git.svg", "./img/webpack.svg", "./img/ps.svg", "./img/figma.svg"]
+		},
+		"portfolio": {
+			"title": "Портфолио",
+			"text": ["Посетить сайт", "Посмотреть код"]
+		},
+		"footer": {
+			"text": "Хотите узнать больше или просто пообщаться? Всегда рад ответить!"
+		}
 	}
 }

@@ -4,15 +4,22 @@ import MenuList from '../menuList/MenuList';
 
 import './menu.scss';
 
-const Menu = ({ onLinkClick, data }) => {
-  const { menu: menuText } = data;
+const Menu = ({ onLinkClick, data, onLangClick }) => {
+  const { lang: langArr, menu: menuText } = data;
+  const langPs = langArr.map((lang) => (
+    <button
+      type="button"
+      className="menu__lang"
+      key={lang}
+      onClick={onLangClick}
+    >
+      {lang}
+    </button>
+  ));
   return (
     <nav className="menu">
       <div className="menu__body">
-        <div className="menu__lang-wrapper">
-          <p className="menu__lang eng">Eng</p>
-          <p className="menu__lang ru">Ru</p>
-        </div>
+        <div className="menu__lang-wrapper">{langPs}</div>
         <MenuList onLinkClick={onLinkClick} data={menuText} />
       </div>
     </nav>
@@ -21,6 +28,7 @@ const Menu = ({ onLinkClick, data }) => {
 
 Menu.propTypes = {
   onLinkClick: PropTypes.func.isRequired,
+  onLangClick: PropTypes.func.isRequired,
   data: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 

@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import './menuList.scss';
 
 const MenuList = ({ onLinkClick, data }) => (
-  <ul className="list">
+  <ul className="menu-list">
     {data.map((elemText, index) => (
-      <li key={elemText} className="list__elem">
+      <li key={elemText} className="menu-list__elem">
         <Link
           to={index ? elemText.toLowerCase() : '/'}
-          className="list__link"
+          className="menu-list__link"
           onClick={onLinkClick}
         >
           {elemText}

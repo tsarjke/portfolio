@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Menu from '../menu/Menu';
 import './Header.scss';
 
-const Header = ({ data }) => {
+const Header = ({ data, onLangClick }) => {
   const [menuVisibility, setMenuVisibility] = useState(
     window.innerWidth >= 768,
   );
@@ -28,7 +28,15 @@ const Header = ({ data }) => {
   return (
     <header className="header">
       <div className="header__row">
-        {menuVisibility ? <Menu onLinkClick={onLinkClick} data={data} /> : ''}
+        {menuVisibility ? (
+          <Menu
+            onLinkClick={onLinkClick}
+            onLangClick={onLangClick}
+            data={data}
+          />
+        ) : (
+          ''
+        )}
         <button
           type="button"
           className={`header__menu-btn ${menuVisibility ? 'active' : ''}`}
@@ -44,6 +52,7 @@ const Header = ({ data }) => {
 };
 
 Header.propTypes = {
+  onLangClick: PropTypes.func.isRequired,
   data: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
