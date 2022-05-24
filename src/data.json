@@ -2,7 +2,12 @@
 	"eng": {
 		"header": {
 			"lang": ["Eng", "Ru"],
-			"menu": ["Main", "About", "Skills", "Portfolio"]
+			"menu": [
+				["Main", "/"],
+				["About me", "about"],
+				["Skills", "skills"],
+				["Portfolio", "portfolio"]
+			]
 		},
 		"main": {
 			"title": "Ivan Tsarev",
@@ -10,15 +15,19 @@
 		},
 		"about": {
 			"title": "About me",
-			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg ", "I'm interested in web and everything connected with it", "Ready to implement excellent projects with wonderful people"]
+			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg.", "I'm interested in web and everything connected with it.", "Ready to implement excellent projects with wonderful people."]
 		},
 		"skills": {
-			"title": "Skills",
-			"images": ["./img/html.svg", "./img/css.svg", "./img/sass.svg", "./img/js.svg", "./img/react.svg", "./img/git.svg", "./img/webpack.svg", "./img/ps.svg", "./img/figma.svg"]
+			"title": "Skills"
 		},
 		"portfolio": {
 			"title": "Portfolio",
-			"text": ["Visit the website", "Go to the code"]
+			"text": ["Visit the website", "Go to the code"],
+			"examples": [
+				["Tutor landing", "https://tutor-ekaterina.ml/", "https://tutor-ekaterina.ml/"],
+				["This project", "", "https://tutor-ekaterina2.ml/"],
+				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://tutor-ekaterina3.ml/"]
+			]
 		},
 		"footer": {
 			"text": "Want to know more or just chat? You are welcome!"
@@ -28,7 +37,12 @@
 	"ru": {
 		"header": {
 			"lang": ["Eng", "Ru"],
-			"menu": ["Главная", "Обо мне", "Навыки", "Портфолио"]
+			"menu": [
+				["Главная", "/"],
+				["Обо мне", "about"],
+				["Навыки", "skills"],
+				["Портфолио", "portfolio"]
+			]
 		},
 		"main": {
 			"title": "Иван Царев",
@@ -36,7 +50,7 @@
 		},
 		"about": {
 			"title": "Обо мне",
-			"text": ["Привет, меня зову Иван, я фронтенд разработчик из Санкт-Петербурга", "Интересуюсь вебом и всем, что с ним связано", "Готов начать работу над отличными проектами с замечательными людьми"]
+			"text": ["Привет, меня зову Иван, я фронтенд разработчик из Санкт-Петербурга.", "Интересуюсь вебом и всем, что с ним связано.", "Готов начать работу над отличными проектами с замечательными людьми."]
 		},
 		"skills": {
 			"title": "Навыки",
@@ -44,7 +58,12 @@
 		},
 		"portfolio": {
 			"title": "Портфолио",
-			"text": ["Посетить сайт", "Посмотреть код"]
+			"text": ["Посетить сайт", "Посмотреть код"],
+			"examples": [
+				["Tutor landing", "https://tutor-ekaterina.ml/", "https://tutor-ekaterina.ml/"],
+				["This project", "", "https://tutor-ekaterina2.ml/"],
+				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://tutor-ekaterina3.ml/"]
+			]
 		},
 		"footer": {
 			"text": "Хотите узнать больше или просто пообщаться? Всегда рад ответить!"

@@ -8,8 +8,10 @@ const Main = ({ data }) => {
   return (
     <section className="main">
       <div className="main__row">
-        <h1 className="main__title title">{title}</h1>
-        <div className="main__label">{labelPs}</div>
+        <div className="main__text">
+          <h1 className="main__title title">{title}</h1>
+          <div className="main__label">{labelPs}</div>
+        </div>
         <div className="main__img" />
       </div>
     </section>

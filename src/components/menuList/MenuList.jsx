@@ -5,10 +5,13 @@ import './menuList.scss';
 
 const MenuList = ({ onLinkClick, data }) => (
   <ul className="menu-list">
-    {data.map((elemText, index) => (
-      <li key={elemText} className="menu-list__elem">
+    {data.map(([elemText, elemRoute]) => (
+      <li
+        key={elemRoute}
+        className="menu-list__elem"
+      >
         <Link
-          to={index ? elemText.toLowerCase() : '/'}
+          to={elemRoute}
           className="menu-list__link"
           onClick={onLinkClick}
         >

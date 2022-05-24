@@ -25,11 +25,24 @@ const App = () => {
   return (
     <Router>
       <div className="container">
-        <Header data={inf.header} onLangClick={onLangClick} />
+        <Header
+          data={inf.header}
+          currentLang={lang}
+          onLangClick={onLangClick}
+        />
         <Routes>
-          <Route path="/*" element={<Main data={inf.main} />} />
-          <Route path="/about" element={<About data={inf.about} />} />
-          <Route path="/skills" element={<Skills title={inf.skills.title} />} />
+          <Route
+            path="/*"
+            element={<Main data={inf.main} />}
+          />
+          <Route
+            path="/about"
+            element={<About data={inf.about} />}
+          />
+          <Route
+            path="/skills"
+            element={<Skills title={inf.skills.title} />}
+          />
           <Route
             path="/portfolio"
             element={<Portfolio data={inf.portfolio} />}

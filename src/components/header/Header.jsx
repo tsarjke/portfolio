@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Menu from '../menu/Menu';
 import './Header.scss';
 
-const Header = ({ data, onLangClick }) => {
+const Header = ({ data, currentLang, onLangClick }) => {
   const [menuVisibility, setMenuVisibility] = useState(
     window.innerWidth >= 768,
   );
@@ -33,6 +33,7 @@ const Header = ({ data, onLangClick }) => {
             onLinkClick={onLinkClick}
             onLangClick={onLangClick}
             data={data}
+            currentLang={currentLang}
           />
         ) : (
           ''
@@ -54,6 +55,7 @@ const Header = ({ data, onLangClick }) => {
 Header.propTypes = {
   onLangClick: PropTypes.func.isRequired,
   data: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  currentLang: PropTypes.string.isRequired,
 };
 
 export default Header;

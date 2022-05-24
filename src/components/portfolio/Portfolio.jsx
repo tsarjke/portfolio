@@ -2,77 +2,61 @@ import React from 'react';
 import Flickity from 'react-flickity-component';
 import PropTypes from 'prop-types'; // requires a loader
 import './portfolio.scss';
-import tutorImg from './img/tutor.jpg';
-import thisImg from './img/this.jpg';
+
+const reqJpgs = require.context('./img', true, /\.jpg$/);
+const jpgs = reqJpgs.keys().map((path) => ({
+  name: path.replace(/([./\d]|jpg)/g, ''),
+  file: reqJpgs(path),
+}));
 
 const Portfolio = ({ data }) => {
   const {
     title,
     text: [site, code],
+    examples,
   } = data;
+
+  const slides = examples.map(([label, siteLink, codeLink]) => {
+    const img = jpgs.find((jpg) => jpg.name === label);
+    return (
+      <div
+        className="card__content"
+        key={codeLink}
+      >
+        <h4 className="card__title">{label}</h4>
+        <div className="card__img">
+          <img
+            src={img.file}
+            alt={`${label} screenshot`}
+          />
+        </div>
+        <div className="card__src">
+          <a
+            href={siteLink}
+            target="_blank"
+            rel="noreferrer"
+            className="card__link"
+          >
+            {site}
+          </a>
+          <a
+            href={codeLink}
+            target="_blank"
+            rel="noreferrer"
+            className="card__link"
+          >
+            {code}
+          </a>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <section className="portfolio">
       <div className="portfolio__row">
         <h2 className="portfolio__title title">{title}</h2>
-        {/* <div className="portfolio__examples card"> */}
-        <Flickity className="portfolio__examples">
-          <div className="card__content">
-            <h4 className="card__title">Tutor landing</h4>
-            <div className="card__img">
-              <img src={tutorImg} alt="Tutor" />
-            </div>
-            <div className="card__src">
-              <a
-                type="button"
-                href="https://tutor-ekaterina.ml"
-                target="_blank"
-                rel="noreferrer"
-                className="card__link"
-              >
-                {site}
-              </a>
-              <a
-                href="https://tutor-ekaterina.ml"
-                target="_blank"
-                rel="noreferrer"
-                className="card__link"
-              >
-                {code}
-              </a>
-            </div>
-          </div>
-          <div className="card__content">
-            <h4 className="card__title">This project</h4>
-            <div className="card__img">
-              <img src={thisImg} alt="This" />
-            </div>
-            <div className="card__src">
-              <a
-                href="https://tutor-ekaterina.ml"
-                className="card__link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {code}
-              </a>
-            </div>
-          </div>
-          <div className="card__content">
-            <h4 className="card__title">Tutor landing</h4>
-            <div className="card__img">
-              <img src={tutorImg} alt="Tutor" />
-            </div>
-            <div className="card__src">
-              <a href="https://tutor-ekaterina.ml" className="card__link">
-                {site}
-              </a>
-              <a href="https://tutor-ekaterina.ml" className="card__link">
-                {code}
-              </a>
-            </div>
-          </div>
-        </Flickity>
-        {/* </div> */}
+        <Flickity className="portfolio__examples card">{slides}</Flickity>
       </div>
     </section>
   );

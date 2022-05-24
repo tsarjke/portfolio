@@ -8,10 +8,16 @@ const SkillList = () => {
   const items = svgs.map(({ path, file }) => {
     const text = path.replace(/([./\d]|svg)/g, '').toUpperCase();
     return (
-      <li className="skill-list__item" key={text}>
+      <li
+        className="skill-list__item"
+        key={text}
+      >
         <div className="skill-list__content">
           <div className="skill-list__img">
-            <img src={file} alt={text} />
+            <img
+              src={file}
+              alt={text}
+            />
           </div>
           <h4 className="skill-list__label">{text}</h4>
         </div>

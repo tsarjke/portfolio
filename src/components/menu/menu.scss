@@ -18,7 +18,7 @@
     width: 100%;
     background-color: #000;
 
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
       position: static;
       background-color: transparent;
       padding: 20px 0;
@@ -43,7 +43,7 @@
 		background-color: transparent;
 		font-size: 1.2rem;
 		font-weight: bold;
-		color: #bbb;
+		color: #888;
 		padding: 0 8px;
 		cursor: pointer;
 
@@ -55,10 +55,14 @@
       border-right: 1px solid #fff;
     }
 
+		&.active {
+			color: #fff;
+		}
+
 		@media (min-width: 768px) {
 			font-size: 1rem;
 			padding: 0 5px;
-			color: #555;
+			color: #777;
 
 			&:hover {
 				color: #000;
@@ -66,6 +70,10 @@
 
 			&:not(:last-child) {
 				border-right: 1px solid #555;
+			}
+
+			&.active {
+				color: #000;
 			}
     }
   }
