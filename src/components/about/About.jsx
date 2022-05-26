@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './about.scss';
-import photo from './img/photo.jpg';
+import photo from './img/about.jpg';
 
 const About = ({ data }) => {
   const { title, text: textArr } = data;

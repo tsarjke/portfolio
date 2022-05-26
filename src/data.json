@@ -15,7 +15,7 @@
 		},
 		"about": {
 			"title": "About me",
-			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg.", "I'm interested in web and everything connected with it.", "Ready to implement excellent projects with wonderful people."]
+			"text": ["Hi, I'm Ivan – Frontend developer from Saint-Petersburg.", "I'm interested in web and everything connected with it. I'm studying for a master's degree at ITMO University, specialization: \"Technologies of front-end and back-end development\"", "Ready to implement interesting projects. I'm constantly improving in web development and not afraid to take on complex tasks.", "I enjoy learning new things: travelling, reading books, learning English, which I am intensively improving every day. Ready to move :)"]
 		},
 		"skills": {
 			"title": "Skills"
@@ -24,9 +24,9 @@
 			"title": "Portfolio",
 			"text": ["Visit the website", "Go to the code"],
 			"examples": [
-				["Tutor landing", "https://tutor-ekaterina.ml/", "https://tutor-ekaterina.ml/"],
+				["Tutor landing", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
 				["This project", "", "https://tutor-ekaterina2.ml/"],
-				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://tutor-ekaterina3.ml/"]
+				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://github.com/tsarjke/tutor"]
 			]
 		},
 		"footer": {
@@ -50,7 +50,7 @@
 		},
 		"about": {
 			"title": "Обо мне",
-			"text": ["Привет, меня зову Иван, я фронтенд разработчик из Санкт-Петербурга.", "Интересуюсь вебом и всем, что с ним связано.", "Готов начать работу над отличными проектами с замечательными людьми."]
+			"text": ["Привет, меня зовут Иван, я фронтенд разработчик из Санкт-Петербурга.", "Интересуюсь вебом и всем, что с ним связано. Учусь в магистратуре Университета ИТМО, специализация: \"Технологии front-end и back-end разработки\".", "Готов начать работу над интересными проектами. Постоянно совершенствуюсь в веб-разработке и не боюсь браться за сложные задачи.", "Люблю познавать новое: путешествовать, читать книги, изучать английский язык, который усиленно совершненствую каждый день. Готов к переезду :)"]
 		},
 		"skills": {
 			"title": "Навыки",
@@ -60,9 +60,9 @@
 			"title": "Портфолио",
 			"text": ["Посетить сайт", "Посмотреть код"],
 			"examples": [
-				["Tutor landing", "https://tutor-ekaterina.ml/", "https://tutor-ekaterina.ml/"],
+				["Tutor landing", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
 				["This project", "", "https://tutor-ekaterina2.ml/"],
-				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://tutor-ekaterina3.ml/"]
+				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://github.com/tsarjke/tutor"]
 			]
 		},
 		"footer": {

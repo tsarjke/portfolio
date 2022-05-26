@@ -2,14 +2,14 @@ import React from 'react';
 import './contact.scss';
 
 import { ReactComponent as TgIcon } from './img/telegram.svg';
-import { ReactComponent as LinIcon } from './img/instagram.svg';
-import { ReactComponent as InstIcon } from './img/linkedin.svg';
+import { ReactComponent as LinIcon } from './img/linkedin.svg';
+import { ReactComponent as GmailIcon } from './img/gmail.svg';
 
 const Contact = () => {
   const contactList = [
     [<TgIcon />, 'https://t.me/tsarjke'],
-    [<LinIcon />, 'https://t.me/tsarjke2'],
-    [<InstIcon />, 'https://t.me/tsarjke3'],
+    [<LinIcon />, 'https://www.linkedin.com/in/tsarev-ivan/'],
+    [<GmailIcon />, 'mailto:ivantsarb@gmail.com'],
   ].map(([svg, link]) => (
     <li className="contact-list__elem" key={link}>
       <a

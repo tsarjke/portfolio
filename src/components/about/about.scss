@@ -43,7 +43,7 @@
     }
 
     @media (min-width: 768px) {
-      font-size: 1.55rem;
+      font-size: 1.5rem;
       margin: 0 0 25px 0;
 
       p:not(:last-child) {
@@ -53,17 +53,18 @@
 
 		@media (min-width: 1024px) {
 			overflow-y: auto;
-			width: 55%;
+			width: 50%;
 			text-align: left;
-			margin: 0 15px 0 0;
+			margin: 0 20px 0 0;
     }
 
 		@media (min-width: 1280px) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
 		@media (min-width: 1440px) {
-      font-size: 2rem;
+      font-size: 1.9rem;
+			width: 45%;
     }
   }
 
