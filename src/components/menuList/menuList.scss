@@ -23,6 +23,7 @@
     font-size: 1.75rem;
     color: #fff;
     position: relative;
+		user-select: none;
 
     &:after {
       content: '';
