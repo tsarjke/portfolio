@@ -5,13 +5,13 @@ import photo from './img/about.jpg';
 
 const About = ({ data }) => {
   const { title, text: textArr } = data;
-  const textPs = textArr.map((text) => <p className="about__text" key={text[1]}>{text}</p>);
+  const textPs = textArr.map((text) => <p className="about__text" key={text}>{text}</p>);
   return (
     <section className="about">
       <div className="about__row">
         <h2 className="about__title title">{title}</h2>
         <div className="about__content">
-          <div className="about__text">
+          <div className="about__text" data-testid="text">
             {textPs}
           </div>
           <div className="about__img">

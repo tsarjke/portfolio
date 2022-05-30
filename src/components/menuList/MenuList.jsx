@@ -11,6 +11,7 @@ const MenuList = ({ onLinkClick, data }) => (
         className="menu-list__elem"
       >
         <Link
+          data-testid="menu-link"
           to={elemRoute}
           className="menu-list__link"
           onClick={onLinkClick}

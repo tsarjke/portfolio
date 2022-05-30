@@ -10,12 +10,10 @@ const Menu = ({
   data,
   currentLang,
 }) => {
-  const {
-    lang: langArr,
-    menu,
-  } = data;
+  const { lang: langArr, menu } = data;
   const langPs = langArr.map((lang) => (
     <button
+      data-testid="lang-button"
       type="button"
       className={`menu__lang ${
         currentLang === lang.toLowerCase() ? 'active' : ''
@@ -26,8 +24,12 @@ const Menu = ({
       {lang}
     </button>
   ));
+
   return (
-    <nav className="menu">
+    <nav
+      data-testid="menu"
+      className="menu"
+    >
       <div className="menu__body">
         <div className="menu__lang-wrapper">{langPs}</div>
         <MenuList

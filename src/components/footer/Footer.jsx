@@ -5,7 +5,7 @@ import './footer.scss';
 import Contact from '../contact/Contact';
 
 const Footer = ({ text }) => (
-  <footer className="footer">
+  <footer data-testid="footer" className="footer">
     <div className="footer__row">
       <h2 className="footer__text">{text}</h2>
       {/* <button type="button" className="footer__btn">

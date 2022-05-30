@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import Header from '../header/Header';
-import About from '../about/About';
-import Main from '../main/Main';
-import Skills from '../skills/Skills';
-import Portfolio from '../portfolio/Portfolio';
-import Footer from '../footer/Footer';
+import AppRouter from '../appRouter/AppRouter';
 
 import data from '../../data.json';
 
@@ -23,34 +16,11 @@ const App = () => {
   const inf = data[lang];
 
   return (
-    <Router>
-      <div className="container">
-        <Header
-          data={inf.header}
-          currentLang={lang}
-          onLangClick={onLangClick}
-        />
-        <Routes>
-          <Route
-            path="/*"
-            element={<Main data={inf.main} />}
-          />
-          <Route
-            path="/about"
-            element={<About data={inf.about} />}
-          />
-          <Route
-            path="/skills"
-            element={<Skills title={inf.skills.title} />}
-          />
-          <Route
-            path="/portfolio"
-            element={<Portfolio data={inf.portfolio} />}
-          />
-        </Routes>
-        <Footer text={inf.footer.text} />
-      </div>
-    </Router>
+    <AppRouter
+      data={inf}
+      currentLang={lang}
+      onLangClick={onLangClick}
+    />
   );
 };
 

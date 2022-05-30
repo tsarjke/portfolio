@@ -6,7 +6,7 @@ const Main = ({ data }) => {
   const { title, label: labelArr } = data;
   const labelPs = labelArr.map((label) => <p key={label[0]}>{label}</p>);
   return (
-    <section className="main">
+    <section data-testid="main-section" className="main">
       <div className="main__row">
         <div className="main__text">
           <h1 className="main__title title">{title}</h1>

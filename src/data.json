@@ -26,7 +26,7 @@
 			"examples": [
 				["Tutor landing", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
 				["This project", "", "https://tutor-ekaterina2.ml/"],
-				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://github.com/tsarjke/tutor"]
+				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://github.com/tsarjke/tutor3"]
 			]
 		},
 		"footer": {
@@ -53,8 +53,7 @@
 			"text": ["Привет, меня зовут Иван, я фронтенд разработчик из Санкт-Петербурга.", "Интересуюсь вебом и всем, что с ним связано. Учусь в магистратуре Университета ИТМО, специализация: \"Технологии front-end и back-end разработки\".", "Готов начать работу над интересными проектами. Постоянно совершенствуюсь в веб-разработке и не боюсь браться за сложные задачи.", "Люблю познавать новое: путешествовать, читать книги, изучать английский язык, который усиленно совершненствую каждый день. Готов к переезду :)"]
 		},
 		"skills": {
-			"title": "Навыки",
-			"images": ["./img/html.svg", "./img/css.svg", "./img/sass.svg", "./img/js.svg", "./img/react.svg", "./img/git.svg", "./img/webpack.svg", "./img/ps.svg", "./img/figma.svg"]
+			"title": "Навыки"
 		},
 		"portfolio": {
 			"title": "Портфолио",

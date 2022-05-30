@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio snapshot section with properly placed props 1`] = `
+<section
+  class="portfolio"
+  data-testid="portfolio-section"
+>
+  <div
+    class="portfolio__row"
+  >
+    <h2
+      class="portfolio__title title"
+    >
+      title
+    </h2>
+    <div
+      class="portfolio__examples card flickity-enabled"
+      tabindex="0"
+    >
+      <div
+        class="flickity-viewport"
+        style="height: 0px;"
+      >
+        <div
+          class="flickity-slider"
+          style="left: 0px;"
+        >
+          <div
+            class="card__content is-selected"
+            style="position: absolute; left: 0px; transform: translateX(NaN%);"
+          >
+            <h4
+              class="card__title"
+            >
+              test
+            </h4>
+            <div
+              class="card__img"
+            >
+              <img
+                alt="test screenshot"
+                src="./img/test.jpg"
+              />
+            </div>
+            <div
+              class="card__src"
+            >
+              <a
+                class="card__link"
+                href="site-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                t
+              </a>
+              <a
+                class="card__link"
+                href="code-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                e
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        aria-label="Previous"
+        class="flickity-button flickity-prev-next-button previous"
+        disabled=""
+        type="button"
+      >
+        <svg
+          class="flickity-button-icon"
+          viewBox="0 0 100 100"
+        >
+          <path
+            class="arrow"
+            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next"
+        class="flickity-button flickity-prev-next-button next"
+        disabled=""
+        type="button"
+      >
+        <svg
+          class="flickity-button-icon"
+          viewBox="0 0 100 100"
+        >
+          <path
+            class="arrow"
+            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+            transform="translate(100, 100) rotate(180) "
+          />
+        </svg>
+      </button>
+      <ol
+        class="flickity-page-dots"
+      />
+    </div>
+  </div>
+</section>
+`;

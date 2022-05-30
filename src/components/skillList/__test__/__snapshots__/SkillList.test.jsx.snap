@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkillList snapshot list with properly placed imgages 1`] = `
+<ul
+  class="skill-list"
+  data-testid="skill-list"
+>
+  <li
+    class="skill-list__item"
+  >
+    <div
+      class="skill-list__content"
+    >
+      <div
+        class="skill-list__img"
+      >
+        <img
+          alt="TEST"
+          src="./img/test.jpg"
+        />
+      </div>
+      <h4
+        class="skill-list__label"
+      >
+        TEST
+      </h4>
+    </div>
+  </li>
+</ul>
+`;

@@ -26,7 +26,7 @@ const Header = ({ data, currentLang, onLangClick }) => {
   };
 
   return (
-    <header className="header">
+    <header data-testid="header" className="header">
       <div className="header__row">
         {menuVisibility ? (
           <Menu
@@ -39,6 +39,7 @@ const Header = ({ data, currentLang, onLangClick }) => {
           ''
         )}
         <button
+          data-testid="menu-button"
           type="button"
           className={`header__menu-btn ${menuVisibility ? 'active' : ''}`}
           onClick={() => setMenuVisibility(!menuVisibility)}

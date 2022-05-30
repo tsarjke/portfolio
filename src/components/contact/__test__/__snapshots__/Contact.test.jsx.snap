@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul
+  className="contact-list"
+>
+  <li
+    className="contact-list__elem"
+  >
+    <a
+      className="contact-list__link"
+      href="https://t.me/tsarjke"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <svg>
+        telegram.svg
+      </svg>
+    </a>
+  </li>
+  <li
+    className="contact-list__elem"
+  >
+    <a
+      className="contact-list__link"
+      href="https://www.linkedin.com/in/tsarev-ivan/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <svg>
+        linkedin.svg
+      </svg>
+    </a>
+  </li>
+  <li
+    className="contact-list__elem"
+  >
+    <a
+      className="contact-list__link"
+      href="mailto:ivantsarb@gmail.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <svg>
+        gmail.svg
+      </svg>
+    </a>
+  </li>
+</ul>
+`;

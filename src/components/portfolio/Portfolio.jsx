@@ -3,11 +3,16 @@ import Flickity from 'react-flickity-component';
 import PropTypes from 'prop-types'; // requires a loader
 import './portfolio.scss';
 
-const reqJpgs = require.context('./img', true, /\.jpg$/);
-const jpgs = reqJpgs.keys().map((path) => ({
-  name: path.replace(/([./\d]|jpg)/g, ''),
-  file: reqJpgs(path),
-}));
+const reqJpgs = process.env.NODE_ENV === 'test'
+  ? ''
+  : require.context('./img', false, /\.jpg$/);
+
+const jpgs = process.env.NODE_ENV === 'test'
+  ? [{ name: 'test', file: './img/test.jpg' }]
+  : reqJpgs.keys().map((path) => ({
+    name: path.replace(/([./\d]|jpg)/g, ''),
+    file: reqJpgs(path),
+  }));
 
 const Portfolio = ({ data }) => {
   const {
@@ -53,7 +58,7 @@ const Portfolio = ({ data }) => {
   });
 
   return (
-    <section className="portfolio">
+    <section data-testid="portfolio-section" className="portfolio">
       <div className="portfolio__row">
         <h2 className="portfolio__title title">{title}</h2>
         <Flickity className="portfolio__examples card">{slides}</Flickity>
