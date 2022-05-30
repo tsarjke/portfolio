@@ -11,7 +11,7 @@ describe('Portfolio', () => {
           text: 'text',
           examples: [['test', 'site-link', 'code-link']],
         }}
-      />
+      />,
     );
 
     const section = screen.getByTestId('portfolio-section');

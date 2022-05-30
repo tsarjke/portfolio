@@ -18,7 +18,7 @@ describe('Menu', () => {
           onLangClick={onLangClick}
           onLinkClick={jest.fn()}
         />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const langBtns = screen.getAllByTestId('lang-button');

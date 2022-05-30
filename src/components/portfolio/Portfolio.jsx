@@ -35,30 +35,37 @@ const Portfolio = ({ data }) => {
             alt={`${label} screenshot`}
           />
         </div>
-        <div className="card__src">
-          <a
-            href={siteLink}
-            target="_blank"
-            rel="noreferrer"
-            className="card__link"
-          >
-            {site}
-          </a>
-          <a
-            href={codeLink}
-            target="_blank"
-            rel="noreferrer"
-            className="card__link"
-          >
-            {code}
-          </a>
-        </div>
+        {label === 'In developing' ? (
+          ''
+        ) : (
+          <div className="card__src">
+            <a
+              href={siteLink}
+              target="_blank"
+              rel="noreferrer"
+              className="card__link"
+            >
+              {site}
+            </a>
+            <a
+              href={codeLink}
+              target="_blank"
+              rel="noreferrer"
+              className="card__link"
+            >
+              {code}
+            </a>
+          </div>
+        )}
       </div>
     );
   });
 
   return (
-    <section data-testid="portfolio-section" className="portfolio">
+    <section
+      data-testid="portfolio-section"
+      className="portfolio"
+    >
       <div className="portfolio__row">
         <h2 className="portfolio__title title">{title}</h2>
         <Flickity className="portfolio__examples card">{slides}</Flickity>
