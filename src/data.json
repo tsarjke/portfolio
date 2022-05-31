@@ -25,8 +25,8 @@
 			"text": ["Visit the website", "Go to the code"],
 			"examples": [
 				["Tutor landing", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
-				["This project", "", "https://tutor-ekaterina2.ml/"],
-				["In developing", "https://tutor-ekaterina3.ml/", "https://github.com/tsarjke/tutor3"]
+				["This project", "https://github.com/tsarjke/portfolio", "https://tsarjke-portfolio.ml/"],
+				["In developing", "", ""]
 			]
 		},
 		"footer": {
@@ -60,8 +60,8 @@
 			"text": ["Посетить сайт", "Посмотреть код"],
 			"examples": [
 				["Tutor landing", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
-				["This project", "", "https://tutor-ekaterina2.ml/"],
-				["Tutor landing", "https://tutor-ekaterina3.ml/", "https://github.com/tsarjke/tutor"]
+				["This project", "https://github.com/tsarjke/portfolio", "https://tsarjke-portfolio.ml/"],
+				["In developing", "", ""]
 			]
 		},
 		"footer": {
