@@ -10,7 +10,7 @@ const svgs = process.env.NODE_ENV === 'test'
 
 const SkillList = () => {
   const items = svgs.map(({ path, file }) => {
-    const text = path.replace(/([./\d]|svg)/g, '').toUpperCase();
+    const text = path.replace(/(.\/(\d|\w)_)|.svg/g, '');
     return (
       <li
         className="skill-list__item"
