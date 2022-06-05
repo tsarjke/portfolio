@@ -10,7 +10,7 @@ const reqJpgs = process.env.NODE_ENV === 'test'
 const jpgs = process.env.NODE_ENV === 'test'
   ? [{ name: 'test', file: './img/test.jpg' }]
   : reqJpgs.keys().map((path) => ({
-    name: path.replace(/([./\d]|jpg)/g, ''),
+    name: path,
     file: reqJpgs(path),
   }));
 
@@ -21,8 +21,8 @@ const Portfolio = ({ data }) => {
     examples,
   } = data;
 
-  const slides = examples.map(([label, siteLink, codeLink]) => {
-    const img = jpgs.find((jpg) => jpg.name === label);
+  const slides = examples.map(([label, imgSrc, siteLink, codeLink]) => {
+    const img = jpgs.find((jpg) => jpg.name === imgSrc);
     return (
       <div
         className="card__content"
@@ -35,7 +35,7 @@ const Portfolio = ({ data }) => {
             alt={`${label} screenshot`}
           />
         </div>
-        {label === 'In developing' ? (
+        {imgSrc === './dev.jpg' ? (
           ''
         ) : (
           <div className="card__src">
