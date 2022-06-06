@@ -24,9 +24,9 @@
 			"title": "Portfolio",
 			"text": ["Visit the website", "Go to the code"],
 			"examples": [
-				["Weather forecast", "./weather.jpg", "https://github.com/tsarjke/weather-forecast", "https://weather-for-day.ml/"],
+				["Weather forecast", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast"],
 				["Tutor landing", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
-				["This project", "./this.jpg", "https://github.com/tsarjke/portfolio", "https://tsarjke-portfolio.ml/"],
+				["This project", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio"],
 				["In developing", "./dev.jpg", "", ""]
 			]
 		},
