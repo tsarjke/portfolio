@@ -24,10 +24,11 @@
 			"title": "Portfolio",
 			"text": ["Visit the website", "Go to the code"],
 			"examples": [
+				["Todo List", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo"],
 				["Weather forecast", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast"],
 				["Tutor landing", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
 				["This project", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio"],
-				["In developing", "./dev.jpg", "", ""]
+				["New projects", "./dev.jpg", "", ""]
 			]
 		},
 		"footer": {
@@ -60,10 +61,11 @@
 			"title": "Портфолио",
 			"text": ["Посетить сайт", "Посмотреть код"],
 			"examples": [
+				["Список дел", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo"],
 				["Прогноз погоды", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast"],
 				["Лэндинг репетитора", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
 				["Этот проект", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio"],
-				["В разработке", "./dev.jpg", "", ""]
+				["новые проекты", "./dev.jpg", "", ""]
 			]
 		},
 		"footer": {
