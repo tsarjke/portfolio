@@ -24,12 +24,12 @@
 			"title": "Portfolio",
 			"text": ["Visit the website", "Go to the code"],
 			"examples": [
-				["Hotel Search", "./hotels.jpg", "https://tsarjke-hotels.ml/", "https://github.com/tsarjke/hotels"],
-				["Todo List", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo"],
-				["Weather forecast", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast"],
-				["Tutor landing", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
-				["This project", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio"],
-				["New projects", "./dev.jpg", "", ""]
+				["Hotel Search", "./hotels.jpg", "https://tsarjke-hotels.ml/", "https://github.com/tsarjke/hotels", ["React", "Redux", "TypeScript", "CSS", "Git", "Figma"]],
+				["Todo List", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo", ["React", "Redux", "TypeScript", "CSS", "Git"]],
+				["Weather forecast", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast", ["React", "JavaScript", "Sass", "Git", "Jest"]],
+				["Tutor landing", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor", ["HTML", "JavaScript", "Sass", "Git", "Webpack", "Git", "Figma"]],
+				["This project", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio", ["React", "JavaScript", "Sass", "Git"]],
+				["New projects", "./dev.jpg", "", "", []]
 			]
 		},
 		"footer": {
@@ -62,12 +62,12 @@
 			"title": "Портфолио",
 			"text": ["Посетить сайт", "Посмотреть код"],
 			"examples": [
-				["Поиск отелей", "./hotels.jpg", "https://tsarjke-hotels.ml/", "https://github.com/tsarjke/hotels"],
-				["Список дел", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo"],
-				["Прогноз погоды", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast"],
-				["Лэндинг репетитора", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor"],
-				["Этот проект", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio"],
-				["Новые проекты", "./dev.jpg", "", ""]
+				["Поиск отелей", "./hotels.jpg", "https://tsarjke-hotels.ml/", "https://github.com/tsarjke/hotels", ["React", "Redux", "TypeScript", "CSS", "Git", "Figma"]],
+				["Список дел", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo", ["React", "Redux", "TypeScript", "CSS", "Git"]],
+				["Прогноз погоды", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast", ["React", "JavaScript", "Sass", "Git", "Jest"]],
+				["Лэндинг репетитора", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor", ["HTML", "JavaScript", "Sass", "Git", "Webpack", "Git", "Figma"]],
+				["Этот проект", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio", ["React", "JavaScript", "Sass", "Git"]],
+				["Новые проекты", "./dev.jpg", "", "", []]
 			]
 		},
 		"footer": {

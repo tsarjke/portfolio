@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Flickity from 'react-flickity-component';
 import PropTypes from 'prop-types'; // requires a loader
 import './portfolio.scss';
+
+import testsvg from '../skillList/img/1_HTML.svg';
 
 const reqJpgs = process.env.NODE_ENV === 'test'
   ? ''
@@ -14,6 +17,14 @@ const jpgs = process.env.NODE_ENV === 'test'
     file: reqJpgs(path),
   }));
 
+const reqSvgs = process.env.NODE_ENV === 'test'
+  ? ''
+  : require.context('../skillList/img/', true, /\.svg$/);
+
+const svgs = process.env.NODE_ENV === 'test'
+  ? [{ path: 'test', file: './img/test.jpg' }]
+  : reqSvgs.keys().map((path) => ({ path, file: reqSvgs(path) }));
+
 const Portfolio = ({ data }) => {
   const {
     title,
@@ -21,8 +32,13 @@ const Portfolio = ({ data }) => {
     examples,
   } = data;
 
-  const slides = examples.map(([label, imgSrc, siteLink, codeLink]) => {
+  const slides = examples.map(([label, imgSrc, siteLink, codeLink, techs]) => {
     const img = jpgs.find((jpg) => jpg.name === imgSrc);
+
+    const techsSvgs = svgs.filter(
+      (svg) => techs.indexOf(svg.path.slice(4, svg.path.length - 4)) !== -1,
+    );
+
     return (
       <div
         className="card__content"
@@ -30,10 +46,25 @@ const Portfolio = ({ data }) => {
       >
         <h4 className="card__title">{label}</h4>
         <div className="card__img">
-          <img
-            src={img.file}
-            alt={`${label} screenshot`}
-          />
+          <div className="card__screen">
+            <img
+              src={img.file}
+              alt={`${label} screenshot`}
+            />
+          </div>
+          {techsSvgs.length ? (
+            <div className="card__techs">
+              {techsSvgs.map(({ path, file }) => (
+                <img
+                  key={path}
+                  src={file}
+                  alt={path}
+                />
+              ))}
+            </div>
+          ) : (
+            ''
+          )}
         </div>
         {imgSrc === './dev.jpg' ? (
           ''
