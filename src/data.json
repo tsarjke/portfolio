@@ -26,7 +26,8 @@
 			"examples": [
 				["Hotel Search", "./hotels.jpg", "https://tsarjke-hotels.ml/", "https://github.com/tsarjke/hotels", ["React", "Redux", "TypeScript", "CSS", "Git", "Figma"]],
 				["Todo List", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo", ["React", "Redux", "TypeScript", "CSS", "Git"]],
-				["Weather forecast", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast", ["React", "JavaScript", "Sass", "Git", "Jest"]],
+				["Currency Converter", "./currency-converter.jpg", "https://tsarjke-converter.ml/", "https://github.com/tsarjke/currency-converter", ["React", "TypeScript", "CSS", "Git"]],
+				["Weather Forecast", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast", ["React", "JavaScript", "Sass", "Git", "Jest"]],
 				["Tutor landing", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor", ["HTML", "JavaScript", "Sass", "Git", "Webpack", "Git", "Figma"]],
 				["This project", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio", ["React", "JavaScript", "Sass", "Git"]],
 				["New projects", "./dev.jpg", "", "", []]
@@ -64,6 +65,7 @@
 			"examples": [
 				["Поиск отелей", "./hotels.jpg", "https://tsarjke-hotels.ml/", "https://github.com/tsarjke/hotels", ["React", "Redux", "TypeScript", "CSS", "Git", "Figma"]],
 				["Список дел", "./todo-list.jpg", "https://tsarjke-todo.ml/", "https://github.com/tsarjke/todo", ["React", "Redux", "TypeScript", "CSS", "Git"]],
+				["Конвертер валют", "./currency-converter.jpg", "https://tsarjke-converter.ml/", "https://github.com/tsarjke/currency-converter", ["React", "TypeScript", "CSS", "Git"]],
 				["Прогноз погоды", "./weather.jpg", "https://weather-for-day.ml/", "https://github.com/tsarjke/weather-forecast", ["React", "JavaScript", "Sass", "Git", "Jest"]],
 				["Лэндинг репетитора", "./tutor.jpg", "https://tutor-ekaterina.ml/", "https://github.com/tsarjke/tutor", ["HTML", "JavaScript", "Sass", "Git", "Webpack", "Git", "Figma"]],
 				["Этот проект", "./this.jpg", "https://tsarjke-portfolio.ml/", "https://github.com/tsarjke/portfolio", ["React", "JavaScript", "Sass", "Git"]],
